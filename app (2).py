@@ -94,7 +94,7 @@ with st.sidebar:
 
     # Numerical Inputs
     age = st.slider("Age", min_value=18, max_value=80, value=df_ref['Age'].median().astype(int))
-    annual_income = st.number_input("Annual Income ($")", min_value=0.0, value=df_ref['Annual_Income'].median()) # Fixed: Escaped inner double quote
+    annual_income = st.number_input("Annual Income ($)", min_value=0.0, value=df_ref['Annual_Income'].median()) # Fixed: Escaped inner double quote
     monthly_inhand_salary = st.number_input("Monthly Inhand Salary ($")", min_value=0.0, value=df_ref['Monthly_Inhand_Salary'].median()) # Fixed: Escaped inner double quote
     num_bank_accounts = st.slider("Number of Bank Accounts", min_value=0, max_value=10, value=df_ref['Num_Bank_Accounts'].median().astype(int))
     num_credit_card = st.slider("Number of Credit Cards", min_value=0, max_value=10, value=df_ref['Num_Credit_Card'].median().astype(int))
